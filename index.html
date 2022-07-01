@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>  
+        <meta charset="UTF-8">
+        <meta name="author" content="Mr.Khan">
+        <meta name="description" content="this page contents all of the things i am learning
+         how to create an html web application.">
+        <title>My First Web Page </title>
+        <link rel="icon" href="images/TFV_logo.jpeg" type="image/x-icon">
+        <link rel="stylesheet" href="main.css" type="text/css">
+</head>
+   
+ <body>
+        <header>  
+        <h1> My Goals For The Year </h1>
+
+    <hr>
+
+    <nav aria-label="primary-navigation">
+        <ul>
+                <li>
+                        <a href="#html">Learning HTML</a>
+                </li>
+
+                <li>
+                        <a href="#vacation">Planning a Vacation</a>
+                </li>
+
+                <li>
+                        <a href="#contact">Contact Me</a>
+                </li>
+        </ul>
+    </nav>
+</header>
+
+    <hr>
+    <main>
+<article id="html"> 
+        <section>
+        <h2>I'm Ready To Laern HTML</h2>
+        <p> This is my first web application </p>
+        <figure>
+        <img src="images/hello_world_img.png" alt="HTML TFV_logo" 
+        title="hello world" width="300" height="150">
+        <figcaption>HELLO WORLD</figcaption>
+        <p>
+                <code>&lt;h1&gt;Hello world!&lt;h1&gt;</code>
+        </p></figure>
+        
+        <h3>My daily schedule</h3>
+        <p> let me tell you how 
+                <br>...i learn more about web dev.
+                <br>...i plan out my schedule.
+                <br>...i use resourse from MDN.
+        </p>
+        <aside>
+                <details>
+                        <summary>
+                                Guess The Number Of Hours I code per Day
+                        </summary>
+                        <p>
+                        I start at 8am and i write coce for 3 
+                        hours every morning
+                        </p>
+                </details>
+        </aside>
+        </section>
+</article>
+<br>
+<table>
+        <caption>My Daily schedule</caption>
+<thead>
+        <tr>
+                <th scope="col">Time</th>
+                <th scope="col">Activity</th>
+        </tr>
+</thead>  
+<tbody>      
+        <tr>
+                <th scope="row">morning</th>        
+                <td>
+                        <time datetime="08:00">08:00 AM</time>-<time datetime="11:00">11:00 AM</time>
+                </td>
+                <td>write code</td>
+        </tr>
+
+        <tr>
+                <th scope="row">Break</th>
+                <td>
+                        <time datetime="11:00">11:00 AM</time>-<time datetime="12:00">12:00 AM</time>
+                </td>
+                <td>Eat Lunch</td>
+        </tr>
+
+        <tr>
+                <th scope="row">Afternoon</th>
+                <td>
+                        <time datetime="12:00">12:00 AM</time>-<time datetime="17:00">05:00 AM</time>
+                </td>
+                <td>study for other courses</td>
+        </tr>
+
+        <tr>
+                <th scope="row">Evening</th>
+                <td rowspan="2"> All other Times </td>
+                <td>Free Times</td>
+        </tr>
+        <tr>
+                <th scope="row">Night</th>
+                <td>sleep</td>
+        </tr>
+</tbody>
+<tfoot>
+        <tr>
+                <td colspan="3">And thats what i do every day, 5 days a week.
+                        Just eat, sleep and recharge!
+                </td>
+        </tr>
+</tfoot>
+</table>
+
+<hr>
+
+<article id="vacation">
+<section>
+        <h2>I'm also planning some vacation</h2>
+        <p> I'hv been realy working very hard and   <em> now i need a getaway </em>.</p>
+        <p> I live in mumbai so want to visit marine drive </p>
+
+        <h3>Places i like to visit </h3>
+
+        <figure>
+        <img src="images/zoo.jpg" alt="zoo_image" 
+        title="zoo" width="300" height="250" loading="lazy">
+        <figcaption>WILD LOINES</figcaption>
+        </figure>
+        <p> i love visitnig zoo </p>
+        <p> I have heard good thimgs anout going here:</p>
+        <address>
+            Jijamata Udyan Zoo ( Ranichi Baug),
+            <br> Dr Ambedkar Road, Byculla East, Mumbai,
+            <br> 400027, India · 
+        </address>
+
+        <h3>Places i want to avoid</h3>
+        <p> anywhere hot.   <strong> no way! </strong> </p>
+</section>
+
+</article>
+
+<hr>
+
+<article id="contact">
+        <h2>Contact Me</h2>
+        <p>I'd Really like To Hear From You!</p>
+
+        <form action="https://httpbin.org.net/get" method="get">
+<fieldset>
+                        <legend>Personal Info</legend>
+                
+        <p>
+                <label for="firstName">First Name:</label>
+                <input type="text" name="firstname" id="firstName"
+                autocomplete="on" required autofocus 
+                placeholder="Enter Your First Name">
+        </p>
+        <p>
+                <label for="lastName">Last Name:</label>
+                <input type="text" name="lastname" id="lastName"
+                autocomplete="on" required autofocus 
+                placeholder="Enter Your last Name">
+        </p>
+        <p>
+                <label for="password">Password:</label>
+                <input type="password" name="password" id="password"
+                autocomplete="on" autofocus 
+                placeholder="Enter Your Password">    
+        </p>
+        <p>
+                <label for="phone">Phone:</label>
+                <input type="tel" name="phone" id="phone"
+                autocomplete="on" required autofocus 
+                placeholder="Enter Your Phone" pattern="[0-9]{3}[0-9]{3}[0-9]{4}">
+        </p>
+        <p>
+                <label for="decade">Favorite Decade:</label>
+                <input type="tel" name="decade" id="decade"
+                min="1950" max="2030" step="10" value="1998">
+        </p>
+        <p>
+                <label for="coffee">Favorite coffee:</label>
+                <select name="coffee" id="coffee">
+                <optgroup label="Coffees">
+                        <option value="regular coffee">Regular coffee</option>
+                        <option value="iced coffee">Iced coffee</option>
+                </optgroup>
+                <optgroup label="Espresso Drinks">
+                        <option value="latte">Latte</option>
+                        <option value="cappuccino">Cappuccino</option>
+                        <option value="americano">Americano</option>
+                </optgroup>
+                        <option value="other">Other</option>
+                </select>
+        </p>
+</fieldset>
+<br>
+<fieldset>
+                <legend>What is your Favorite Food?</legend>
+        <p>
+                <input type="radio" name="food" id="tacos" value="tacos">
+                <label for="tacos">Tacos</label>
+        </p>
+
+        <p>
+                <input type="radio" name="food" id="pizza" value="pizza">
+                <label for="pizza">Pizza</label>
+        </p>
+
+        <p>
+                <input type="radio" name="food" id="other" value="other">
+                <label for="other">Other</label>
+        </p>
+</fieldset>
+<br>
+<fieldset>
+                <legend>Do you have Pets?</legend>
+        <p>
+                <input type="checkbox" name="pets" id="dog" value="dog">
+                <label for="dog"> Dog</label>
+        </p>
+
+        <p>
+                <input type="checkbox" name="pets" id="cat" value="cat">
+                <label for="cat">Cat</label>
+        </p>
+
+        <p>
+                <input type="checkbox" name="pets" id="otherPet" value="otherPet">
+                <label for="other"> Other</label>
+        </p>
+</fieldset>
+<br>
+<fieldset>
+                <legend>Send Me A Note</legend>
+        <p>
+                <label for="message">Your Message</label>
+<br>
+                <textarea name="message" id="message" cols="30" rows="10" 
+                placeholder="type your message here"></textarea>
+        </p>
+</fieldset>
+<br>
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+        </form>
+
+</article>
+
+</main>
+
+<hr>
+
+<footer>
+        <p>
+        &lt;&lt;&lt; &copy; Mr.Khan &gt;&gt;&gt;
+        </p>
+</footer>
+
+</body>
+
+</html>
